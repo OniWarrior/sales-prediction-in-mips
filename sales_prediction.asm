@@ -32,6 +32,10 @@ end_print_title:
 # Function    : calculate_sales
 # Description : Calculate the sales that the company will generate in the current year
 
+calculate_sales:
+
+end_calculate_sales:
+
 
 # ------------------------------------------------------------------------------
 app_end:       # End application  
