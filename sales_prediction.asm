@@ -11,8 +11,8 @@ dep_name:      .asciiz "East Coast Sales Division sales prediction: "           
                .text
                .globl main
 main:
-
-
+                jal print_title     # Make function call to print title on console. 
+                j   app_end         # End the app
 end_main:
 
 
@@ -26,4 +26,5 @@ print_title:
 end_print_title:
                jr $ra                # Return 
 
-               
+
+app_end:       # End application  
