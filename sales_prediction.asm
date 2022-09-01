@@ -5,4 +5,5 @@
 #             : into MIPS.
 
                .data
-nl:            .asciiz "\n"                # newline directive -- For printing newlines
+nl:            .asciiz "\n"                            # newline directive -- For printing newlines
+dep_name:      .asciiz "East Coast Sales Devision: "   # name directive    -- Company devision name.
