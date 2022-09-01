@@ -23,5 +23,7 @@ print_title:
                la $a0, welcome_txt   # Load base address for welcome text.
                li $v0, 4           
                syscall               # Print welcome text to console.
-
 end_print_title:
+               jr $ra                # Return 
+
+               
