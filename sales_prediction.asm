@@ -7,3 +7,9 @@
                .data
 nl:            .asciiz "\n"                                             # newline directive -- For printing newlines
 dep_name:      .asciiz "East Coast Sales Division sales prediction: "   # name directive    -- Company devision name.
+               .text
+               .globl main
+main:
+
+
+end_main:
