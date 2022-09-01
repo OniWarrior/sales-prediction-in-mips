@@ -5,8 +5,9 @@
 #             : into MIPS.
 
                .data
-nl:            .asciiz "\n"                                             # newline directive -- For printing newlines
-dep_name:      .asciiz "East Coast Sales Division sales prediction: "   # name directive    -- Company devision name.
+welcome_txt:   .asciiz "***********Welcome to Sales prediction app*****************\n" # name directive    -- Print app name.
+nl:            .asciiz "\n"                                                            # newline directive -- For printing newlines.
+dep_name:      .asciiz "East Coast Sales Division sales prediction: "                  # name directive    -- Company division name.
                .text
                .globl main
 main:
@@ -19,5 +20,6 @@ end_main:
 # Description: Prints the title of the application on to the console.
 
 print_title:
+               
 
 end_print_title:
