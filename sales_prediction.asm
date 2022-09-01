@@ -20,6 +20,6 @@ end_main:
 # Description: Prints the title of the application on to the console.
 
 print_title:
-               
+               la $v0, welcome_txt   # Load base address for welcome text
 
 end_print_title:
