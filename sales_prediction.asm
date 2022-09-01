@@ -26,5 +26,12 @@ print_title:
 end_print_title:
                jr $ra                # Return 
 
+# ------------------------------------------------------------------------------
 
+
+# Function    : calculate_sales
+# Description : Calculate the sales that the company will generate in the current year
+
+
+# ------------------------------------------------------------------------------
 app_end:       # End application  
