@@ -45,6 +45,10 @@ calculate_sales:
                li $v0, 4
                syscall                       # Print newline.
 
+               la $a0, dep_name              # Load dep name
+               li $v0, 4
+               syscall                       # Print dep name.
+
 end_calculate_sales:
 
 
