@@ -34,6 +34,9 @@ end_print_title:
 
 calculate_sales:
 
+               li $f0, 0.62           # Load 0.62 -- represents 62 percent -- into floating point register
+                
+
 end_calculate_sales:
 
 
