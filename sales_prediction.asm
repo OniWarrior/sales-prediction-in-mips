@@ -41,6 +41,10 @@ calculate_sales:
 
                move $f12, $f0                # Move total sales to $f12 to print.
 
+               la $a0, nl                    # Load newline
+               li $v0, 4
+               syscall                       # Print newline.
+
 end_calculate_sales:
 
 
