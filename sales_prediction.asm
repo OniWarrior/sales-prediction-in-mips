@@ -12,6 +12,7 @@ dep_name:      .asciiz "East Coast Sales Division sales prediction: "           
                .globl main
 main:
                 jal print_title     # Make function call to print title on console. 
+                jal calculate_sales # Make function call to calculate and print total sales prediction.
                 j   app_end         # End the app
 end_main:
 
@@ -49,7 +50,7 @@ calculate_sales:
                mul.s $f0, $f1, $f0           # Multiply 4.6 mil by 62 percent
 
                move $f12, $f0                # Move total sales to $f12 to print.
-                         
+
                li $v0, 2
                syscall                       # Print sales prediction.
 
