@@ -8,6 +8,8 @@
 welcome_txt:   .asciiz "***********Welcome to Sales prediction app*****************\n" # name directive    -- Print app name.
 nl:            .asciiz "\n"                                                            # newline directive -- For printing newlines.
 dep_name:      .asciiz "East Coast Sales Division sales prediction: "                  # name directive    -- Company division name.
+percent:       .float 0.62                                                             # percentage to be multiplied
+total:         .float 4600000                                                          # total sales for company
                .text
                .globl main
 main:
@@ -45,11 +47,11 @@ calculate_sales:
                syscall                       # Print dep name.
 
 
-               li $f0, 0.62                  # Load 0.62 -- represents 62 percent -- into floating point register
-               li $f1, 4600000               # Load 4.6 million into floating point register.
+               lwc1  $f0, percent            # Load percentage into register
+               lwc1  $f1, total              # Load total sales into register
                mul.s $f0, $f1, $f0           # Multiply 4.6 mil by 62 percent
 
-               move $f12, $f0                # Move total sales to $f12 to print.
+               mov.s $f12, $f0                # Move total sales to $f12 to print.
 
                li $v0, 2
                syscall                       # Print sales prediction.
