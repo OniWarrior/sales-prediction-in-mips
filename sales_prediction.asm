@@ -55,6 +55,7 @@ calculate_sales:
                syscall                       # Print sales prediction.
 
 end_calculate_sales:
+               jr $ra                        # return
 
 
 # ------------------------------------------------------------------------------
