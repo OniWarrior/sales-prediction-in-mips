@@ -34,9 +34,13 @@ end_print_title:
 
 calculate_sales:
 
-               li $f0, 0.62           # Load 0.62 -- represents 62 percent -- into floating point register
-               li $f1, 4600000        # Load 4.6 million into floating point register.
-               li $t0, 2              # Load 2 into temp register
+               li $f0, 0.62                  # Load 0.62 -- represents 62 percent -- into floating point register
+               li $f1, 4600000               # Load 4.6 million into floating point register.
+               mul.s $f0, $f1, $f0           # Multiply 4.6 mil by 62 percent
+               
+
+               move $f12, $f0                # Move total sales to $f12 to print.
+
 end_calculate_sales:
 
 
